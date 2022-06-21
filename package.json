@@ -1,5 +1,5 @@
 {
-  "name": "big-commerce-handlebars",
+	"name": "big-commerce-handlebars",
 	"displayName": "big-commerce-handlebars",
 	"description": "",
 	"version": "0.0.1",
@@ -7,17 +7,21 @@
 		"vscode": "^1.68.0"
 	},
 	"categories": [
-		"Other"
+		"Programming Languages"
 	],
 	"activationEvents": [
-        "onCommand:big-commerce-handlebars.helloWorld"
+		"workspaceContains:/templates/**/*.html"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
+		"grammars": [
 			{
-				"command": "big-commerce-handlebars.helloWorld",
-				"title": "Hello World"
+				"language": "handlebars",
+				"scopeName": "text.html.handlebars",
+				"path": "./syntaxes/handlebars.json",
+				"embeddedLanguages": {
+					"meta.embedded.block.frontmatter": "yaml"
+				}
 			}
 		]
 	},
