@@ -73,9 +73,6 @@ export default class BCHelpersLinkedEditingRangeProvider implements vsc.LinkedEd
                     const blockPos = document.positionAt((match.index || 0) + 3);
                     const thisPos = document.positionAt((thisBlock.index || 0) + 3);
 
-                    console.log(blockPos);
-                    console.log(thisPos);
-
                     return [
                         new vsc.Range(thisPos, thisPos.translate(0, word.length - 3)),
                         new vsc.Range(blockPos, blockPos.translate(0, word.length - 3)),
