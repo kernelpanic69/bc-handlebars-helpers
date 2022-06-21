@@ -1,14 +1,22 @@
 # big-commerce-handlebars README
 
-This is the README for your extension "big-commerce-handlebars". After writing up a brief description, we recommend including the following sections.
+Provides support for BigCommerce theme templates.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Basic autocomplete (trigger on '{{' or '(')
 
-For example if there is an image subfolder under your extension project workspace:
+![Autocomplete!](clips/autocomplete.gif)
+
+- Hover documentation
+
+![Hover docs!](clips/hover.gif)
 
 \!\[feature X\]\(images/feature-x.png\)
+
+- Linked editing
+
+![Linked editing!](clips/linked.gif)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
